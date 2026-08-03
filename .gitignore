@@ -1,2 +1,4 @@
 *.local.*
 *.local
+tempCodeRunnerFile.sh
+.DS_Store
