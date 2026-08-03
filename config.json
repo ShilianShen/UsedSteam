@@ -12,8 +12,9 @@
     },
     {
       "name": "订书机(可旋转)",
-      "price": 8,
+      "price": 16,
       "tag": "好评如潮",
+      "discount": 10,
       "images": [
         "figures/订书机_旋转1.jpg",
         "figures/订书机_旋转2.jpg"
@@ -21,7 +22,7 @@
     },
     {
       "name": "订书机",
-      "price": 8,
+      "price": 2,
       "images": [
         "figures/订书机.jpg"
       ]
@@ -29,20 +30,22 @@
     {
       "name": "法压壶",
       "price": 8,
+      "discount": 10,
       "images": [
         "figures/法压壶.jpg"
       ]
     },
     {
       "name": "机械键盘",
-      "price": 8,
+      "price": 24,
+      "discount": 10,
       "images": [
         "figures/机械键盘.jpg"
       ]
     },
     {
       "name": "教材",
-      "price": 8,
+      "price": 6,
       "sold": true,
       "images": [
         "figures/教材工程力学1.jpg",
@@ -52,56 +55,60 @@
     },
     {
       "name": "空气炸锅(延迟)",
-      "price": 8,
+      "price": 32,
       "images": [
         "figures/空气炸锅延迟出.jpg"
       ]
     },
     {
-      "name": "拉花缸(可显示温度)",
-      "price": 8,
+      "name": "拉花缸(可显示温度, 350ml)",
+      "price": 12,
+      "discount": 10,
       "images": [
         "figures/拉花缸_温度.jpg"
       ]
     },
     {
-      "name": "拉花缸",
+      "name": "拉花缸(350ml)",
       "price": 8,
+      "discount": 10,
       "images": [
         "figures/拉花缸.jpg"
       ]
     },
     {
       "name": "朗氏德汉词典",
-      "price": 8,
+      "price": 2,
+      "sold": true,
       "images": [
         "figures/朗氏德汉词典.jpg"
       ]
     },
     {
       "name": "螺丝刀",
-      "price": 8,
+      "price": 2,
       "images": [
         "figures/螺丝刀.jpg"
       ]
     },
     {
       "name": "磨豆机",
-      "price": 8,
+      "price": 1,
       "images": [
         "figures/磨豆机.jpg"
       ]
     },
     {
       "name": "抹茶的工具",
-      "price": 8,
+      "price": 12,
+      "discount": 10,
       "images": [
         "figures/抹茶的工具.jpg"
       ]
     },
     {
       "name": "抹茶粉",
-      "price": 8,
+      "price": 3,
       "sold": true,
       "images": [
         "figures/抹茶粉.jpg"
@@ -109,7 +116,7 @@
     },
     {
       "name": "热水壶",
-      "price": 8,
+      "price": 2,
       "sold": true,
       "images": [
         "figures/热水壶.jpg"
@@ -117,7 +124,8 @@
     },
     {
       "name": "设备除尘器",
-      "price": 8,
+      "discount": 10,
+      "price": 20,
       "images": [
         "figures/设备除尘器1.jpg",
         "figures/设备除尘器2.jpg"
@@ -125,7 +133,7 @@
     },
     {
       "name": "制冰机",
-      "price": 8,
+      "price": 64,
       "sold": true,
       "images": [
         "figures/制冰机.jpg"
@@ -133,14 +141,14 @@
     },
     {
       "name": "AAA电池x16(全新)",
-      "price": 8,
+      "price": 1,
       "images": [
         "figures/AAA电池.jpg"
       ]
     },
     {
       "name": "CD科川",
-      "price": 8,
+      "price": 2,
       "images": [
         "figures/CD科川.jpg"
       ]

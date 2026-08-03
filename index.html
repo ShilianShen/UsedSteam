@@ -22,6 +22,11 @@
   <script>
     const euro = new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR'});
     const money = n => typeof n === 'number' ? euro.format(n) : n;
+    function shuffle(items){
+      const result=[...items];
+      for(let i=result.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[result[i],result[j]]=[result[j],result[i]]}
+      return result;
+    }
     const grid = document.querySelector('#grid'), dialog = document.querySelector('#detail');
     let products = [];
     function priceHTML(p){
@@ -47,7 +52,7 @@
       document.querySelector('#modalPrice').innerHTML=`<div class="pricebox">${priceHTML(p)}</div>`;dialog.showModal();
     }
     dialog.querySelector('.close').onclick=()=>dialog.close();dialog.onclick=e=>{if(e.target===dialog)dialog.close()};
-    fetch('./config.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{products=(data.products||[]).sort((a,b)=>Number(Boolean(a.sold))-Number(Boolean(b.sold)));document.querySelector('#count').textContent=`${products.length} 件商品`;products.forEach((p,i)=>grid.append(makeCard(p,i)))}).catch(()=>grid.innerHTML='<div class="error">无法读取 config.json。请通过本地服务器打开此页面（不要直接双击 index.html）。</div>');
+    fetch('./config.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{const all=data.products||[];products=[...shuffle(all.filter(p=>!p.sold)),...shuffle(all.filter(p=>p.sold))];document.querySelector('#count').textContent=`${products.length} 件商品`;products.forEach((p,i)=>grid.append(makeCard(p,i)))}).catch(()=>grid.innerHTML='<div class="error">无法读取 config.json。请通过本地服务器打开此页面（不要直接双击 index.html）。</div>');
   </script>
 </body>
 </html>
